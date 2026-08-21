@@ -1,5 +1,5 @@
 translation:
-  targets: []
+  targets: [en, ja]
   primary_lang: it
 
 theme: "Una base di conoscenza dedicata al Decameron di Giovanni Boccaccio (c. 1349-1353):\

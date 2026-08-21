@@ -1,0 +1,22 @@
+translation:
+  targets: []
+  primary_lang: it
+
+theme: "Una base di conoscenza dedicata al Decameron di Giovanni Boccaccio (c. 1349-1353):\
+  \ la cornice narrativa (i dieci giovani fiorentini, la brigata, che fuggono la peste\
+  \ nera del 1348 e raccontano novelle per dieci giorni), le singole novelle narrate,\
+  \ i personaggi ricorrenti, il contesto storico e geografico, e la genesi e la ricezione\
+  \ dell'opera. Dà priorità al testo primario (l'edizione filologica su Wikisource)\
+  \ e a fonti secondarie storico-letterarie autorevoli (es. Wikipedia, studi critici);\
+  \ esclude adattamenti cinematografici/televisivi moderni, opere omonime contemporanee\
+  \ non correlate, e commenti amatoriali non accademici."
+
+generate:
+  max_retries: 2
+
+review:
+  auto_merge: true
+  chain_of_thought: false
+
+schema:
+  base_types: [Person, Place, Organization, Event, HowTo, DefinedTerm, ScholarlyArticle, NewsArticle, BlogPosting, ShortStory, Book]

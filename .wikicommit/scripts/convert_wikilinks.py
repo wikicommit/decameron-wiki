@@ -28,6 +28,7 @@ import argparse
 import os
 import posixpath
 import re
+import subprocess
 import sys
 from pathlib import Path
 from urllib.parse import quote
@@ -109,6 +110,112 @@ def _yaml_quote(s: str) -> str:
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
 
+def git_commit_dates(repo_root: Path, subdir: Path) -> dict[Path, tuple[str, str]]:
+    """Return {path relative to subdir: (created, modified)} as ISO-8601 dates
+    read from git history.
+
+    Quartz's created-modified-date plugin resolves a page's dates in
+    frontmatter -> git -> filesystem order, but content/ is a gitignored build
+    artifact, so its git step can never resolve anything there and every page
+    falls through to the filesystem — i.e. to whenever the build happened to
+    run. On CI that means a no-op rebuild restamps the whole site. The tracked
+    trees under .wikicommit/ that content/ is generated *from* do have real
+    history, so it is read here and emitted as frontmatter, which the plugin
+    consults first.
+
+    One `git log` pass for the whole tree rather than one per file: at a few
+    hundred tracked files the per-file form costs a process spawn each.
+    """
+    try:
+        proc = subprocess.run(
+            ["git", "-c", "core.quotePath=false", "log", "--format=%x01%aI",
+             "--name-only", "--diff-filter=AMRC", "--", str(subdir)],
+            cwd=repo_root, capture_output=True, text=True, encoding="utf-8", check=True,
+        )
+    except (OSError, subprocess.CalledProcessError) as e:
+        print(f"WARNING: could not read git history for {subdir}: {e}")
+        return {}
+
+    try:
+        rel_root = subdir.resolve().relative_to(repo_root.resolve())
+    except ValueError:
+        return {}
+
+    # `git log` walks newest-first, so the first date seen for a path is its
+    # latest commit (modified) and the last one seen is its first (created).
+    dates: dict[Path, tuple[str, str]] = {}
+    for record in proc.stdout.split("\x01"):
+        lines = record.strip("\n").split("\n")
+        if not lines or not lines[0]:
+            continue
+        commit_date = lines[0]
+        for name in lines[1:]:
+            if not name:
+                continue
+            try:
+                rel = Path(name).relative_to(rel_root)
+            except ValueError:
+                continue
+            previous = dates.get(rel)
+            dates[rel] = (commit_date, previous[1] if previous else commit_date)
+    return dates
+
+
+def head_commit_date(repo_root: Path) -> tuple[str, str] | None:
+    """Return HEAD's commit date as a (created, modified) pair, or None.
+
+    Used for the navigation index pages this script synthesises, which mirror
+    no single tracked file and so have no history of their own to read.
+    """
+    try:
+        proc = subprocess.run(
+            ["git", "log", "-1", "--format=%aI"],
+            cwd=repo_root, capture_output=True, text=True, encoding="utf-8", check=True,
+        )
+    except (OSError, subprocess.CalledProcessError):
+        return None
+    date = proc.stdout.strip()
+    return (date, date) if date else None
+
+
+_FRONTMATTER_RE = re.compile(r"\A---[ \t]*\r?\n(?P<body>.*?)\r?\n---[ \t]*(?:\r?\n|\Z)", re.DOTALL)
+
+
+def with_dates(content: str, dates: tuple[str, str] | None) -> str:
+    """Return content with created/modified added to its frontmatter block.
+
+    A key the page already sets is left alone: an explicitly authored date
+    outranks git history, matching the plugin's own frontmatter-first
+    priority. Content with no parseable frontmatter block is returned as-is.
+    """
+    if not dates:
+        return content
+    match = _FRONTMATTER_RE.match(content)
+    if not match:
+        return content
+    fm, err, _ = parse_frontmatter_and_body_text(content)
+    if err or not isinstance(fm, dict):
+        return content
+    additions = [
+        f"{key}: {_yaml_quote(value)}"
+        for key, value in zip(("created", "modified"), dates)
+        if key not in fm
+    ]
+    if not additions:
+        return content
+    at = match.start("body")
+    return content[:at] + "\n".join(additions) + "\n" + content[at:]
+
+
+def _with_date_lines(lines: list[str], dates: tuple[str, str] | None) -> list[str]:
+    """Insert created/modified into a frontmatter `lines` list built by the
+    generated-page writers below, each of which starts its list with a
+    literal "---" opener."""
+    if not dates:
+        return lines
+    return lines[:1] + [f"created: {_yaml_quote(dates[0])}", f"modified: {_yaml_quote(dates[1])}"] + lines[1:]
+
+
 def existing_lang_targets(source_dir: Path, targets: list[str]) -> list[str]:
     """Filter targets to languages with at least one non-removed content page."""
     result = []
@@ -139,6 +246,7 @@ def generate_root_index(
     total_pages: int,
     reviewed_pages: int,
     theme: str,
+    dates: tuple[str, str] | None = None,
 ) -> None:
     """Write a root content/index.md that links to the wiki top page(s).
 
@@ -202,7 +310,7 @@ def generate_root_index(
     lines += ["", f"[{labels['sources']}](./sources/)"]
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    out_path.write_text("\n".join(_with_date_lines(lines, dates)) + "\n", encoding="utf-8")
     print(f"Generating root index: {out_path}")
 
 
@@ -361,7 +469,8 @@ def render_source_label(source: dict) -> str:
 
 
 def _write_source_page(
-    out_path: Path, fm: dict, body: str, source: dict, title: str, entity_dir: Path, mgmt_rel: Path, labels: dict
+    out_path: Path, fm: dict, body: str, source: dict, title: str, entity_dir: Path, mgmt_rel: Path, labels: dict,
+    dates: tuple[str, str] | None = None,
 ) -> None:
     """Write one content/sources/<mgmt_rel> page mirroring an ingest
     management file: its type, original link, ingest status, `## Summary`
@@ -414,11 +523,13 @@ def _write_source_page(
     lines += page_lines if page_lines else [labels["no_generated_pages"]]
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text("\n".join(lines).rstrip("\n") + "\n", encoding="utf-8")
+    out_path.write_text("\n".join(_with_date_lines(lines, dates)).rstrip("\n") + "\n", encoding="utf-8")
     print(f"Generating source page: {out_path}")
 
 
-def _write_sources_index(out_path: Path, entries: list[dict], labels: dict, type_labels: dict) -> None:
+def _write_sources_index(
+    out_path: Path, entries: list[dict], labels: dict, type_labels: dict, dates: tuple[str, str] | None = None
+) -> None:
     """Write content/sources/index.md: a landing page grouping every mirrored
     source page by type, so links from generate_root_index() never dead-end
     (same invariant the old content/<lang>/sources.md upheld)."""
@@ -442,11 +553,14 @@ def _write_sources_index(out_path: Path, entries: list[dict], labels: dict, type
         lines.append(labels["empty"])
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text("\n".join(lines).rstrip("\n") + "\n", encoding="utf-8")
+    out_path.write_text("\n".join(_with_date_lines(lines, dates)).rstrip("\n") + "\n", encoding="utf-8")
     print(f"Generating sources index: {out_path}")
 
 
-def _write_source_dir_index(out_path: Path, title: str, subdirs: list[str], files: list[dict], labels: dict) -> None:
+def _write_source_dir_index(
+    out_path: Path, title: str, subdirs: list[str], files: list[dict], labels: dict,
+    dates: tuple[str, str] | None = None,
+) -> None:
     """Write an index.md for one intermediate directory under content/sources/
     (e.g. content/sources/url/ or content/sources/url/<host>/), listing its
     immediate subdirectories and mirrored source pages as plain relative
@@ -460,12 +574,13 @@ def _write_source_dir_index(out_path: Path, title: str, subdirs: list[str], file
         lines.append(labels["empty"])
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text("\n".join(lines).rstrip("\n") + "\n", encoding="utf-8")
+    out_path.write_text("\n".join(_with_date_lines(lines, dates)).rstrip("\n") + "\n", encoding="utf-8")
     print(f"Generating source directory index: {out_path}")
 
 
 def _write_source_dir_indexes(
-    output_dir: Path, entries: list[dict], type_labels: dict, labels: dict, already_written: set[Path]
+    output_dir: Path, entries: list[dict], type_labels: dict, labels: dict, already_written: set[Path],
+    dates: tuple[str, str] | None = None,
 ) -> set[Path]:
     """Write an index.md for every intermediate directory under
     content/sources/ (e.g. content/sources/url/, content/sources/url/<host>/)
@@ -524,12 +639,16 @@ def _write_source_dir_indexes(
         # headings; deeper directories (host names, repo subpaths) have no
         # translation to look up, so use the literal directory name.
         title = type_labels.get(d.name, d.name) if d.parent == Path(".") else d.name
-        _write_source_dir_index(output_dir / index_rel, title, subdirs, files, labels)
+        _write_source_dir_index(output_dir / index_rel, title, subdirs, files, labels, dates)
         written.add(index_rel)
     return written
 
 
-def generate_source_pages(output_dir: Path, ingest_dir: Path, entity_dir: Path, primary_lang: str) -> set[Path]:
+def generate_source_pages(
+    output_dir: Path, ingest_dir: Path, entity_dir: Path, primary_lang: str,
+    ingest_dates: dict[Path, tuple[str, str]] | None = None,
+    index_dates: tuple[str, str] | None = None,
+) -> set[Path]:
     """Mirror .wikicommit/source/ into content/sources/, one page per ingest
     management file, plus a content/sources/index.md landing page (Issue
     #476). Replaces the old per-language content/<lang>/sources.md
@@ -575,19 +694,27 @@ def generate_source_pages(output_dir: Path, ingest_dir: Path, entity_dir: Path, 
             mgmt_rel = mgmt_file.relative_to(ingest_dir)
             title = str(source.get("path") or source.get("url") or mgmt_rel.as_posix())
             out_rel = Path("sources") / mgmt_rel
-            _write_source_page(output_dir / out_rel, fm, body, source, title, entity_dir, mgmt_rel, labels)
+            _write_source_page(
+                output_dir / out_rel, fm, body, source, title, entity_dir, mgmt_rel, labels,
+                (ingest_dates or {}).get(mgmt_rel),
+            )
             written.add(out_rel)
 
             entries.append({"type": source["type"], "rel": mgmt_rel.as_posix(), "title": title})
 
     index_rel = Path("sources") / "index.md"
-    _write_sources_index(output_dir / index_rel, entries, labels, type_labels)
+    _write_sources_index(output_dir / index_rel, entries, labels, type_labels, index_dates)
     written.add(index_rel)
-    written |= _write_source_dir_indexes(output_dir, entries, type_labels, labels, already_written=written)
+    written |= _write_source_dir_indexes(
+        output_dir, entries, type_labels, labels, already_written=written, dates=index_dates
+    )
     return written
 
 
-def convert_file(src_path: Path, rel_path: Path, source_dir: Path, output_dir: Path, primary_lang: str) -> tuple[int, int]:
+def convert_file(
+    src_path: Path, rel_path: Path, source_dir: Path, output_dir: Path, primary_lang: str,
+    dates: tuple[str, str] | None = None,
+) -> tuple[int, int]:
     """Convert one file's WikiLinks and write it to output_dir. Return (converted, unresolved) counts for this file's links."""
     unresolved = 0
 
@@ -626,7 +753,7 @@ def convert_file(src_path: Path, rel_path: Path, source_dir: Path, output_dir: P
         title = (target_fm or {}).get("title") or f"{type_name}/{slug}"
         return f"[{_escape_md_link_text(title)}]({link_path})"
 
-    new_content = WIKILINK_RE.sub(replace, content)
+    new_content = with_dates(WIKILINK_RE.sub(replace, content), dates)
 
     out_path = output_dir / rel_path
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -651,6 +778,9 @@ def main() -> int:
     output_dir = Path(args.output)
     primary_lang = args.primary_lang or load_primary_lang(repo_root)
 
+    entity_dates = git_commit_dates(repo_root, source_dir)
+    index_dates = head_commit_date(repo_root)
+
     converted = 0
     unresolved_links = 0
     skipped_removed = 0
@@ -671,7 +801,9 @@ def main() -> int:
             if (load_frontmatter(src_path) or {}).get("review_status") == "reviewed":
                 reviewed_pages += 1
         rel_path = src_path.relative_to(source_dir)
-        file_converted, file_unresolved = convert_file(src_path, rel_path, source_dir, output_dir, primary_lang)
+        file_converted, file_unresolved = convert_file(
+            src_path, rel_path, source_dir, output_dir, primary_lang, entity_dates.get(rel_path)
+        )
         converted += file_converted
         unresolved_links += file_unresolved
         if file_converted:
@@ -680,8 +812,13 @@ def main() -> int:
     targets = existing_lang_targets(source_dir, load_translation_targets(repo_root))
     langs = compute_langs(primary_lang, targets)
     ingest_dir = repo_root / ".wikicommit" / "source"
-    written_rel_paths |= generate_source_pages(output_dir, ingest_dir, source_dir, primary_lang)
-    generate_root_index(output_dir, primary_lang, langs, total_pages, reviewed_pages, load_theme(repo_root))
+    written_rel_paths |= generate_source_pages(
+        output_dir, ingest_dir, source_dir, primary_lang,
+        git_commit_dates(repo_root, ingest_dir), index_dates,
+    )
+    generate_root_index(
+        output_dir, primary_lang, langs, total_pages, reviewed_pages, load_theme(repo_root), index_dates
+    )
     written_rel_paths.add(Path("index.md"))
 
     # Remove stale .md files left over from a previous run that this run did

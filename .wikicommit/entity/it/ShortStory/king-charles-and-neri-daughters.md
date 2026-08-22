@@ -1,0 +1,62 @@
+---
+title: "Il re Carlo vecchio e le figliuole di messer Neri"
+type: "schema:ShortStory"
+lang: it
+sources:
+  - type: url
+    url: https://it.wikisource.org/wiki/Decameron/Giornata_decima/Novella_sesta
+    hash: sha256:c4f03b7b82f31b8da10431be098cc2831786c03fa0567fcd8e700b584ec07f61
+tags: [novellistica, virtu-cortesi]
+review_status: pending
+generated_at: "2026-08-22"
+generated_by: "claude-opus-5[1m]"
+
+properties:
+  description: "Sesta novella della decima giornata del Decameron, narrata da Fiammetta. Il re Carlo vecchio, innamoratosi delle due figlie gemelle del ghibellino messer Neri degli Uberti che le ha ospitate a cena nel suo giardino, è ripreso dal conte Guido di Monforte e vince sé stesso maritandole entrambe nobilmente."
+  author:
+    - "[[Person/giovanni-boccaccio]]"
+  datePublished: ""
+  character:
+    - "Il re Carlo vecchio o ver primo"
+    - "Messer Neri degli Uberti"
+    - "Ginevra la bella"
+    - "Isotta la bionda"
+    - "Il conte Guido di Monforte"
+  genre: "Novella"
+---
+
+*Il re Carlo vecchio e le figliuole di messer Neri* è la sesta novella della decima giornata del [[Book/decameron]]. La rubrica la riassume così: «Il re Carlo vecchio vittorioso, d'una giovanetta innamoratosi, vergognandosi del suo folle pensiero, lei ed una sua sorella onorevolmente marita».
+
+Il testo la colloca dopo la novella di madonna Dianora, sulla quale le donne avevano molto disputato per stabilire chi avesse usato maggiore liberalità, se Gilberto, messere Ansaldo o il nigromante; concesso qualche spazio alla disputa, il re guarda [[Person/fiammetta]] e le comanda di trarle di questione novellando. Nell'esordio ella dichiara di essere sempre stata dell'opinione che in brigate come la loro si debba ragionare tanto largamente che «la troppa strettezza della 'ntenzion delle cose dette» non offra materia di disputa, cosa che si conviene più alle scuole tra gli studenti; e perciò, avendo forse in animo qualcosa di dubbio, lo lascia stare e racconta di un valoroso re e di ciò che egli operò cavallerescamente, non muovendosi per amore a fare contro il proprio onore.
+
+## Trama
+
+Ciascuna può aver udito ricordare il re Carlo vecchio «o ver primo», per la cui magnifica impresa e poi per la gloriosa vittoria avuta del re Manfredi furono cacciati da Firenze i ghibellini e vi tornarono i guelfi. Per questo un cavaliere chiamato messer Neri degli Uberti ne uscì con tutta la famiglia e molti denari, e non volle ridursi altrove che sotto le braccia del re Carlo. Per stare in luogo solitario e finirvi la vita in riposo, andò a Castello a mare di Stabia; e lì, a circa una balestrata dalle altre abitazioni, tra ulivi, nocciuoli e castagni di cui la contrada abbonda, comprò una possessione, vi fece un bel casamento agiato e allato un dilettevole giardino, nel mezzo del quale, avendo copia d'acqua viva, costruì un bel vivaio chiaro e lo riempì facilmente di molto pesce.
+
+Attendendo egli soltanto a rendere ogni giorno più bello il giardino, avvenne che il re Carlo, andato nel tempo caldo a riposarsi a Castello a mare, ne udisse la bellezza e desiderasse vederlo. Saputo di chi era, e pensando che, essendo il cavaliere di parte avversa alla sua, gli convenisse trattarlo più familiarmente, gli mandò a dire che voleva cenare chetamente nel suo giardino la sera seguente con quattro compagni. La cosa fu molto cara a messer Neri, che apparecchiò magnificamente e ricevette il re nel suo bel giardino. Lodati il giardino e la casa, e messe le tavole allato al vivaio, il re si mise a sedere e comandò che a un suo lato sedesse il conte Guido di Monforte, uno dei compagni, e dall'altro messer Neri, mentre gli altri tre servissero secondo l'ordine posto dal padrone di casa. Le vivande furono delicate, i vini ottimi e preziosi, e l'ordine tanto bello che il re lo lodò molto.
+
+Mentre egli mangia lietamente, godendo del luogo solitario, entrano nel giardino due giovinette di forse quindici anni, «bionde come fila d'oro» e coi capelli inanellati e sciolti sotto una leggera ghirlandetta di pervinca, i visi tanto delicati e belli che parevano angeli più che altro; sono vestite di un abito di lino sottilissimo e bianco come neve, strettissimo dalla cintura in su e largo a guisa di padiglione fino ai piedi. La prima porta sulle spalle un paio di vangaiuole e nella destra un bastone lungo; la seconda una padella, sotto il braccio un fascetto di legne, e nelle mani un treppiede, un vaso d'olio e una fiaccola accesa. Il re, meravigliato, attende sospeso.
+
+Fatta riverenza al re, le giovani posano le cose e, prese le vangaiuole e il bastone, entrano nel vivaio, la cui acqua giunge loro al petto. Un famigliare di messer Neri accende il fuoco, mette la padella sul treppiede con l'olio e aspetta il pesce. L'una fruga dove sa che i pesci si nascondono, l'altra para le reti, e in poco tempo ne prendono assai; gettatine al famigliare, che li mette in padella quasi vivi, cominciano — «sí come ammaestrate erano state» — a prendere i più belli e a gettarli sulla tavola davanti al re, al conte Guido e al padre. I pesci guizzano sulla mensa con maraviglioso piacere del re, che a sua volta ne prende e cortesemente li rigetta alle giovani; e così cianciano per un poco, finché il famigliare non ha cotto quanto gli era stato dato — piatto che messer Neri, nota il testo, aveva ordinato più «per uno intramettere» che come vivanda cara o dilettevole.
+
+Vedendo il pesce cotto e avendo pescato abbastanza, le fanciulle escono dal vivaio con la veste bianca e sottile tutta appiccata alle carni, «né quasi cosa alcuna del dilicato lor corpo celando», e ripreso quanto avevano portato rientrano in casa passando vergognosamente davanti al re. Tutti le hanno molto considerate e lodate per belle, ben fatte, piacevoli e costumate; ma sopra ogni altro sono piaciute al re, che ne ha considerato ogni parte del corpo all'uscire dall'acqua tanto attentamente che «chi allora l'avesse punto, non si sarebbe sentito». Ripensandovi, senza sapere chi fossero, sente destarsi nel cuore un ferventissimo desiderio di piacer loro, e riconosce che diventerà innamorato se non se ne guarda; né sa quale delle due gli piaccia di più, tanto sono simili in ogni cosa.
+
+Domanda dunque a messer Neri chi siano le damigelle, e ne ha questa risposta: «Monsignore, queste son mie figliuole ad un medesimo parto nate, delle quali l'una ha nome Ginevra la bella e l'altra Isotta la bionda». Il re le loda molto e lo conforta a maritarle, ma messer Neri se ne scusa dicendo di non poterlo fare. Restando ormai da dare alla cena soltanto le frutta, le due giovani tornano in bellissime giubbe di zendado, con due grandissimi piattelli d'argento pieni di frutti di stagione, che posano davanti al re; poi, tiratesi alquanto indietro, cantano un suono con tanta dolcezza che al re, che le guarda e le ascolta con diletto, pare che tutte le gerarchie degli angeli siano discese a cantare. Finito il canto, si inginocchiano e chiedono commiato: il re, cui pure la loro partenza pesa, lo concede lietamente in apparenza.
+
+Finita la cena, il re risale a cavallo coi compagni e torna al suo alloggio reale. Tenendo nascosto il proprio affetto e non riuscendo, per grande affare che sopravvenga, a dimenticare la bellezza di Ginevra la bella — per amore della quale ama anche la sorella che le somiglia — si invesca a tal punto nelle panie amorose che quasi non può pensare ad altro; e con altri pretesti tiene stretta dimestichezza con messer Neri e visita spesso il giardino per vedere Ginevra. Non potendo più sostenere e non vedendo altro modo, gli cade in pensiero di togliere al padre non una sola ma entrambe le giovani, e manifesta il suo amore e la sua intenzione al conte Guido.
+
+Il conte, uomo valente, gli risponde con una lunga riprensione. Si meraviglia più di quanto farebbe un altro, avendo conosciuto i costumi del re dalla fanciullezza in poi; e non avendogli mai visto tale passione nella giovinezza, quando Amore più leggermente doveva ficcare i suoi artigli, gli pare quasi un miracolo sentirlo amare ora che è vicino alla vecchiaia. Se toccasse a lui riprenderlo, gli ricorderebbe che è ancora con le armi indosso in un regno nuovamente acquistato, «tra nazione non conosciuta e piena d'inganni e di tradimenti», occupato da grandissime sollecitudini e non ancora potutosi porre a sedere: e fra tante cose ha fatto luogo al lusinghevole amore, il che «non è atto di re magnanimo, anzi d'un pusillanimo giovanetto». E, ciò che è molto peggio, ha deliberato di togliere le due figliuole al povero cavaliere che in casa sua lo ha onorato oltre il suo potere e per più onorarlo gliele ha mostrate quasi ignude, testimoniando con ciò quanta sia la fede che ha in lui e che egli lo creda fermamente «re, e non lupo rapace». Gli rammenta poi che furono le violenze fatte alle donne da Manfredi ad aprirgli l'entrata in quel regno, e domanda quale tradimento fu mai più degno d'eterno supplizio che togliere a chi lo onora il suo onore, la sua speranza e la sua consolazione; né varrebbe come scusa il dire di averlo fatto perché quello è ghibellino. Conclude ricordandogli che grandissima gloria è aver vinto Manfredi, «ma molto maggiore è se medesimo vincere».
+
+Le parole pungono amaramente l'animo del re e tanto più l'affliggono quanto più le riconosce vere. Dopo qualche caldo sospiro egli risponde che ogni altro nemico, per forte che sia, gli pare debole e agevole a vincere per il guerriero bene ammaestrato rispetto al proprio appetito; ma che, per quanto grande sia l'affanno e inestimabile la forza necessaria, le parole del conte l'hanno tanto spronato che prima di troppi giorni gli farà vedere coi fatti che, come sa vincere gli altri, così sa dominare sé stesso.
+
+Non molti giorni dopo, tornato il re a [[Place/naples]], sia per togliersi la materia di operare vilmente sia per premiare il cavaliere dell'onore ricevuto, e per quanto gli fosse duro fare altri possessore di ciò che sommamente desiderava per sé, si dispose a maritare le due giovani «non come figliuole di messer Neri, ma come sue». Col piacere del padre e magnificamente dotate, diede Ginevra la bella a messer Maffeo da Palizzi e Isotta la bionda a messer Guiglielmo della Magna, nobili cavalieri e gran baroni ciascuno; e assegnatele loro, se ne andò in Puglia «con dolore inestimabile», e con fatiche continue macerò tanto il suo fiero appetito che, spezzate e rotte le catene amorose, restò libero da tale passione per quanto dovesse vivere.
+
+## Personaggi e significato
+
+Fiammetta anticipa nella chiusa l'obiezione che la novella potrebbe suscitare — che sia piccola cosa per un re aver maritato due giovinette — e la accoglie, spostando poi il peso su ciò che rende grande il gesto: che a compierlo sia stato un re innamorato, il quale marita colei che ama «senza aver preso o pigliare del suo amore fronda o fiore o frutto». La [[DefinedTerm/magnificence]] è qui definita per sottrazione, e il termine di paragone non è la ricchezza donata ma il desiderio non consumato.
+
+La scena della pesca funziona come una prova di fiducia prima che come un quadro. Le giovani sono mandate dal padre, ammaestrate a servire il re, e il testo insiste su questo: è messer Neri a esporle, e il conte Guido leggerà proprio in quell'esposizione la misura della fede riposta nell'ospite. Il pericolo nasce così dall'ospitalità stessa, e la tentazione del re è il rovesciamento diretto di un onore ricevuto.
+
+La riprensione del conte Guido è l'asse morale della novella e ne occupa lo spazio centrale. Essa combina tre argomenti che il testo tiene distinti: l'inopportunità politica, in un regno appena conquistato e non pacificato; la sproporzione fra l'età e la passione; e soprattutto l'analogia con Manfredi, la cui violenza sulle donne è indicata come la causa che aprì al re l'ingresso nel regno. L'ultimo argomento è il più tagliente perché trasforma la colpa progettata in una ripetizione di quella del vinto, e cioè nella distruzione del titolo stesso della vittoria.
+
+Il re, significativamente, non è descritto come guarito dal desiderio ma come vincitore di esso a caro prezzo. Il testo registra il dolore inestimabile della partenza e le fatiche continue con cui macera l'appetito, e la parola con cui il conte aveva chiuso la riprensione — vincere sé stesso — ritorna nella promessa del re e poi nel commento finale. La vittoria interna è così presentata come una campagna militare condotta contro di sé, e la grandezza dell'atto sta nella durata dello sforzo più che nel momento della decisione.

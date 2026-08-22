@@ -6,19 +6,22 @@ sources:
   - type: url
     url: https://it.wikisource.org/wiki/Decameron/Giornata_decima/Novella_nona
     hash: sha256:588906a8c9729ca9fbc0431788ef8449057c1d68051a34088534ad23f23b1672
-tags: [virtu-cortesi]
+  - type: url
+    url: https://it.wikisource.org/wiki/Decameron/Giornata_prima/Novella_terza
+    hash: sha256:47abc311b4be109d3455ec87fddd5417be1775173a4344e84e3982b9ab815885
+tags: [virtu-cortesi, personaggi-ricorrenti]
 review_status: pending
-generated_at: "2026-08-21"
+generated_at: "2026-08-22"
 generated_by: "claude-opus-5[1m]"
 
 properties:
-  description: "Soldano di Babilonia, personaggio della nona novella della Giornata decima del Decameron, dove percorre in incognito le province cristiane sotto le sembianze di un mercante e, riconosciuto poi il cavaliere pavese che l'aveva ospitato, ne ricambia la cortesia con doni regali e con il ritorno a Pavia per arte magica."
+  description: "Soldano di Babilonia, personaggio di due novelle del Decameron: nella terza della Giornata prima tende a un ricco giudeo una domanda insidiosa sulla vera fede e, sconfitto dalla sua risposta, ne fa un amico; nella nona della Giornata decima percorre in incognito le province cristiane sotto le sembianze di un mercante e, riconosciuto poi il cavaliere pavese che l'aveva ospitato, ne ricambia la cortesia con doni regali e con il ritorno a Pavia per arte magica."
   jobTitle: "Soldano di Babilonia"
 ---
 
-Il **Saladino** è, nella nona novella della Giornata decima del [[Book/decameron]], il soldano di Babilonia, presentato come «valentissimo signore» al tempo in cui i cristiani fanno il generale passaggio per riacquistare la Terrasanta. È la figura attorno alla quale la novella costruisce la propria dimostrazione della [[DefinedTerm/magnificence]]: il narratore annuncia infatti di voler mostrare, con una storia lunga ma piacevole, «una delle magnificenze del Saladino».
+Il **Saladino** è il soldano di Babilonia, personaggio di due novelle del [[Book/decameron]]: la terza della Giornata prima ([[ShortStory/melchisedech-three-rings]]) e la nona della Giornata decima ([[ShortStory/saladin-and-messer-torello]]). In quest'ultima è presentato come «valentissimo signore» al tempo in cui i cristiani fanno il generale passaggio per riacquistare la Terrasanta, ed è la figura attorno alla quale la novella costruisce la propria dimostrazione della [[DefinedTerm/magnificence]]: il narratore annuncia infatti di voler mostrare, con una storia lunga ma piacevole, «una delle magnificenze del Saladino».
 
-Il testo lo caratterizza per due tratti che ricorrono in tutta la vicenda: l'accortezza, che gli fa intendere subito le intenzioni altrui, e la larghezza nel ricambiare. Nella novella egli agisce prima come signore che dissimula la propria condizione, poi come sovrano che la esercita senza misura a vantaggio di un privato.
+Il tratto comune alle due novelle è la larghezza nel ricambiare chi gli ha reso un servizio: nella Giornata decima ricambia la cortesia del cavaliere che lo aveva ospitato, nella Giornata prima dona al giudeo che gli ha prestato denaro «grandissimi doni» e lo tiene «sempre per suo amico». Nella novella della Giornata decima il testo lo dice inoltre «accortissimo», e vi agisce prima come signore che dissimula la propria condizione, poi come sovrano che la esercita senza misura a vantaggio di un privato.
 
 ## Nella novella della Giornata decima
 
@@ -33,3 +36,11 @@ Quando Torello, credendo la moglie rimaritata, si mette a giacere deliberato a m
 I doni con cui accompagna il ritorno sono elencati minutamente dal testo: un ricchissimo letto di materassi di velluti e drappi ad oro con una coltre lavorata a compassi di perle grossissime e pietre preziose, stimata poi in Occidente infinito tesoro; una grande corona, segnata in modo che si comprendesse essere mandata alla donna di Torello; un anello con un carbonchio tanto lucente da parere un torchio acceso; una spada dal fornimento di gran pregio; un fermaglio di perle mai simili vedute; due grandissimi bacini d'oro pieni di doble, e reti di perle, anella e cinture. Prima della partenza fa vestire Torello alla guisa saracina e gli fa ravvolgere in testa una delle sue lunghissime bende; poi lo bacia e lo accomanda a Dio.
 
 Tornato a Pavia, Torello significa per più messi la propria felice repatriazione al Saladino, ritenendosi suo amico e suo servitore.
+
+## Nella novella della Giornata prima
+
+Nella terza novella della Giornata prima il Saladino è caratterizzato in apertura da un elogio del suo valore: questo, dice il testo, «non solamente di piccolo uomo il fe' di Babilonia soldano, ma ancora molte vittorie sopra li re saracini e cristiani gli fece avere». La novella lo coglie però in un momento di difficoltà: avendo speso tutto il suo tesoro in diverse guerre e in grandissime sue magnificenze, e trovandosi per un accidente sopravvenuto ad aver bisogno di una buona quantità di denari senza vedere donde ricavarli tanto prestamente, gli viene in mente il ricco giudeo Melchisedech, che prestava a usura in Alessandria.
+
+Il tratto che la novella mette in rilievo è la rinuncia alla violenza aperta. Il Saladino giudica il giudeo tanto avaro da non prestargli mai di sua volontà, ma «forza non gli voleva fare»: stretto dal bisogno, si risolve piuttosto a fargli «una forza da alcuna ragion colorata», cioè a costruire un pretesto giuridico. Lo fa chiamare, lo riceve familiarmente, lo fa sedere accanto a sé e gli domanda quale delle tre leggi — la giudaica, la saracina o la cristiana — reputi la verace, contando di coglierlo nelle parole per potergli muovere una questione.
+
+Sconfitto dalla parabola dei tre anelli, il Saladino riconosce che l'interlocutore è ottimamente saputo uscire dal laccio tesogli davanti ai piedi, e reagisce senza risentimento: gli apre schiettamente il proprio bisogno e gli confessa anche ciò che aveva avuto in animo di fare se non gli avesse risposto con tanta discrezione. Ottenuto liberamente il prestito, lo soddisfa poi interamente, gli dona grandissimi doni, lo tiene sempre per amico e lo mantiene presso di sé in grande e onorevole stato — un esito che anticipa, in scala minore, la larghezza nel ricambiare che la novella della Giornata decima svilupperà per intero.

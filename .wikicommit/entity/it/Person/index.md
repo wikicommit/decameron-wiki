@@ -12,7 +12,9 @@ type: "schema:Person"
 [[Person/filomena]] — Filomena
 [[Person/filostrato]] — Filostrato
 [[Person/geoffrey-chaucer]] — Geoffrey Chaucer
+[[Person/giotto]] — Giotto
 [[Person/giovanni-boccaccio]] — Giovanni Boccaccio
+[[Person/guido-cavalcanti]] — Guido Cavalcanti
 [[Person/lauretta]] — Lauretta
 [[Person/leonardo-salviati]] — Leonardo Salviati
 [[Person/licisca]] — Licisca

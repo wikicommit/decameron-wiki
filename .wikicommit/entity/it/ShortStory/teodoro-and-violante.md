@@ -1,0 +1,86 @@
+---
+title: "Teodoro e la Violante"
+type: "schema:ShortStory"
+lang: it
+sources:
+  - type: url
+    url: https://it.wikisource.org/wiki/Decameron/Giornata_quinta/Novella_settima
+    hash: sha256:b88e5f2d7082918a5cba1b740cb9f9d86e7e1680e10fed11924a812847fba326
+tags: [novellistica, amore-e-fortuna]
+review_status: pending
+generated_at: "2026-08-22"
+generated_by: "claude-opus-5[1m]"
+
+properties:
+  description: "Settima novella della quinta giornata del Decameron. Teodoro, schiavo comprato e affrancato da messere Amerigo, ingravida la figlia di lui Violante ed è condannato alle forche; riconosciuto per figlio dall'ambasciatore Fineo mentre è menato al supplizio, è liberato e la sposa."
+  author:
+    - "[[Person/giovanni-boccaccio]]"
+  datePublished: ""
+  character:
+    - "Teodoro, poi chiamato Pietro"
+    - "Violante, figliuola di messere Amerigo"
+    - "Messere Amerigo Abate da Trapani"
+    - "Fineo, ambasciatore del re d'Erminia"
+    - "Messer Currado, capitano per il re"
+  genre: "Novella"
+---
+
+*Teodoro e la Violante* è la settima novella della quinta giornata del [[Book/decameron]], narrata da [[Person/lauretta]], cui la reina impone l'incarico «udita la fine» della novella precedente — udendo la quale le donne, che erano state sospese temendo che i due amanti fossero arsi, si erano tutte rallegrate lodando Dio. La rubrica ne riassume l'intreccio: «Teodoro, innamorato della Violante figliuola di messere Amerigo suo signore, la 'ngravida ed è alle forche condannato; alle quali frustandosi essendo menato, dal padre riconosciuto e prosciolto, prende per moglie la Violante».
+
+## Trama
+
+Al tempo in cui il buon re Guglielmo reggeva la Sicilia, era nell'isola un gentiluomo chiamato messere Amerigo Abate da Trapani, il quale, fra gli altri beni temporali, era assai ben fornito di figliuoli. Avendo bisogno di servitori, e venendo galee di corsari genovesi di Levante che, costeggiando l'Erminia, avevano preso molti fanciulli, ne comperò alcuni credendoli turchi; e fra questi, benché tutti gli altri paressero pastori, ve n'era uno che pareva gentilesco e di miglior aspetto degli altri, e si chiamava Teodoro.
+
+Crescendo — benché fosse trattato a guisa di servo — egli si crebbe in casa più con i figliuoli di messere Amerigo; e traendo più alla propria natura che all'accidente, cominciò a essere costumato e di bella maniera, tanto che piacque a messere Amerigo al punto che questi lo fece franco. Credendolo turco, lo fece battezzare e chiamare Pietro, e lo fece il maggiore sopra i propri fatti, molto confidandosi di lui.
+
+Come gli altri figliuoli, crebbe similmente una figliuola di messere Amerigo chiamata Violante, bella e delicata giovane, la quale, essendo trattenuta dal padre a maritarsi, si innamorò per ventura di Pietro; e amandolo e facendo grande stima dei suoi costumi e delle sue opere, pure si vergognava di scoprirglielo. Ma Amore le tolse questa fatica, poiché Pietro, avendola più volte cautamente guardata, si era a sua volta innamorato di lei tanto che non sentiva bene alcuno se non quando la vedeva; ma temeva forte che alcuno se ne accorgesse, parendogli di far men che bene. Di ciò si avvide la giovane, che lo vedeva volentieri, e per dargli più sicurtà si mostrava contentissima come era. Dimorarono così assai a lungo, senza attentarsi di dire nulla l'uno all'altro, quantunque ciascuno lo desiderasse molto.
+
+Mentre così ardevano parimente accesi nelle amorose fiamme, la fortuna — «come se diliberato avesse questo voler che fosse» — trovò loro la via per cacciare la temorosa paura che li impediva. Messere Amerigo aveva fuori di Trapani, forse un miglio, un suo molto bel luogo, dove la sua donna con la figliuola e con altre femmine e donne era solita andare spesso per diporto. Essendovi andate un giorno di gran caldo, e avendo menato con sé Pietro, avviene, come si vede talvolta avvenire d'estate, che il cielo si chiuda subitamente di oscuri nuvoli; per cui la donna con la sua compagnia, perché il malvagio tempo non le colga lì, si mette in via per tornare a Trapani, andandovi ratti quanto potevano.
+
+Ma Pietro, che era giovane, e similmente la fanciulla, avanzano assai nell'andare la madre di lei e le altre compagne, forse non meno sospinti da amore che da paura del tempo; ed essendo già tanto avanti che appena si vedevano, avviene che dopo molti tuoni cominci a venire una gragnuola grossissima e spessa, dalla quale la donna con la sua compagnia fugge in casa di un lavoratore. Pietro e la giovane, non avendo rifugio più presto, entrano in una chiesetta antica e quasi tutta caduta, nella quale non dimorava persona; e sotto un poco di tetto che vi era ancora rimasto si stringono entrambi — «e costrinsegli la necessitá del poco coperto a toccarsi insieme».
+
+Quel toccamento fu cagione di rassicurare un poco i loro animi ad aprire gli amorosi desideri; e cominciò per primo Pietro dicendo: «Or volesse Iddio che mai, dovendo io stare come io sto, questa grandine non ristesse!». E la giovane rispose: «Ben mi sarebbe caro!». Da queste parole vengono a prendersi per mano e a stringersi, e da questo ad abbracciarsi e poi a baciarsi, grandinando tuttavia; e il tempo non si racconciò prima che essi, conosciute le ultime dilettazioni d'amore, avessero dato ordine per avere segretamente piacere l'uno dell'altro. Cessato il malvagio tempo e attesa la donna all'entrare della città, che era vicina, tornano con lei a casa.
+
+Lì si ritrovano insieme alcune volte con assai discreto e segreto ordine e con gran consolazione; e la faccenda andò tanto che la giovane ingravidò, il che fu molto discaro all'uno e all'altra. Ella usò molte arti per sgravidare contro il corso della natura, ma non le riuscì mai.
+
+Per la qual cosa Pietro, temendo per la propria vita e deliberato di fuggirsi, glielo dice; e la giovane, udendolo, risponde che, se egli si parte, senza alcun fallo ella si ucciderà. Pietro, che molto l'amava, replica domandandole come voglia che egli dimori lì: la sua gravidezza scoprirà il loro fallo, e a lei sarà perdonato leggermente, ma egli misero sarà colui cui converrà portare la pena del peccato di lei e del proprio. La giovane risponde: «Pietro, il mio peccato si saprá bene, ma sii certo che il tuo, se tu nol dirai, non si saprá mai». Pietro allora dichiara che, poiché ella così gli promette, resterà; ma che pensi di osservarglielo.
+
+Avendo tenuta nascosta la propria pregnezza quanto aveva potuto, e vedendo di non poterla più nascondere per il crescere del corpo, la giovane la manifesta un giorno alla madre con grandissimo pianto, pregandola per la propria salvezza. Dolente senza misura, la donna le dice una gran villania e vuole sapere da lei come fosse andata la cosa; e la giovane, perché non sia fatto male a Pietro, compone una sua favola, rivolgendo la verità in altre forme. La donna se la crede; e per celare il difetto della figliuola la manda a una loro possessione.
+
+Sopravvenuto lì il tempo del partorire, e gridando la giovane come fanno le donne, e non immaginandosi la madre che vi dovesse venire messere Amerigo — che quasi mai vi era solito venire —, avviene che egli, tornando dall'uccellare e passando lungo la camera dove la figliuola gridava, meravigliandosi, entri subitamente dentro e domandi che cosa fosse. Vedendo sopravvenuto il marito, la donna si leva dolente e gli racconta ciò che era intervenuto alla figliuola; ma egli, men presto a credere di quanto era stata la donna, dichiara che non deve esser vero che ella non sapesse di chi fosse gravida, e che perciò lo vuole sapere del tutto: dicendolo, ella potrebbe riacquistare la sua grazia, e se no pensi di morire senza alcuna misericordia.
+
+La donna si ingegna quanto può di far restare contento il marito a quanto aveva detto, ma è niente: salito in furore, egli corre sopra la figliuola con la spada ignuda in mano — la quale, mentre la madre lo teneva in parole, aveva partorito un figliuolo maschio — e le intima o di manifestare da chi quel parto fu generato, o di morire senza indugio. Temendo la morte, la giovane rompe la promessa fatta a Pietro e apre tutto ciò che era stato fra loro.
+
+Udendolo e divenuto fieramente fellone, il cavaliere si trattiene appena dall'ucciderla; ma dopo averle detto quanto l'ira gli apparecchiava, rimonta a cavallo, se ne viene a Trapani e, raccontata a un messer Currado che vi era capitano per il re l'ingiuria fattagli da Pietro, lo fa subitamente prendere mentre quello non se ne guardava; e messo al martorio, egli confessa ogni cosa fatta.
+
+Essendo dopo alcuni giorni condannato dal capitano a essere frustato per la terra e poi appiccato per la gola, messere Amerigo, cui l'ira non era uscita per aver condotto a morte Pietro, e volendo che una medesima ora togliesse di terra i due amanti e il loro figliuolo, mette veleno in un nappo con vino e lo dà a un suo famigliare insieme a un coltello ignudo, dicendogli di andare con quelle due cose dalla Violante e di dirle da parte sua che prenda prestamente quale voglia delle due morti, del veleno o del ferro; se no, egli la farà ardere al cospetto di quanti cittadini vi sono, come ha meritato. E fatto questo, prenda il figliuolo partorito da lei pochi giorni prima, e percossogli il capo al muro lo getti a mangiare ai cani. Data dal fiero padre questa crudele sentenza contro la figliuola e il nipote, il famigliare, «piú a male che a ben disposto», va via.
+
+Condannato e menato alle forche dai famigliari frustandolo, Pietro passa — come piacque a coloro che guidavano la brigata — davanti a un albergo dove erano tre nobili uomini d'Erminia, mandati dal re d'Erminia ambasciatori a Roma per trattare con il papa di grandissime cose per un passaggio che si doveva fare, e lì smontati per rinfrescarsi e riposarsi alcuni giorni, molto onorati dai nobili uomini di Trapani e specialmente da messere Amerigo. Sentendo passare coloro che menavano Pietro, costoro vengono a una finestra a vedere.
+
+Pietro era tutto ignudo dalla cintura in su e con le mani legate dietro; e riguardandolo, uno dei tre ambasciatori, uomo antico e di grande autorità di nome Fineo, gli vede nel petto una gran macchia di vermiglio, «non tinta ma naturalmente nella pelle infissa», a guisa di quelle che le donne chiamano «rose». Veduta quella, gli corre subitamente nella memoria un suo figliuolo che, già quindici anni prima, gli era stato tolto dai corsari sulla marina di Laiazzo, senza che ne avesse mai potuto sapere notizia. Considerando l'età del cattivello che era frustato, giudica che, se il proprio figliuolo fosse vivo, dovrebbe avere l'età che quello pareva; e comincia a sospettare per quel segno che costui sia desso, pensando che, se lo fosse, dovrebbe ancora ricordarsi del proprio nome, di quello del padre e della lingua ermina.
+
+Come gli è vicino, lo chiama dunque: «O Teodoro!». Udendo quella voce, Pietro leva subitamente il capo; e Fineo, parlando in ermino, gli domanda di dove fosse e di chi figliuolo. I sergenti che lo menavano lo fermano per reverenza del valente uomo, sicché Pietro può rispondere di essere stato d'Erminia, figliuolo di uno che ebbe nome Fineo, e di essere stato trasportato lì piccolo fanciullo da non sa che gente.
+
+Udendolo, Fineo conosce certissimamente che è il figliuolo perduto; e piangendo scende giù con i suoi compagni e corre ad abbracciarlo fra tutti i sergenti, e gettatogli addosso un mantello di ricchissimo drappo che aveva indosso, prega colui che lo menava a guastare di attendere lì tanto che gli venga il comandamento di ricondurlo. Costui risponde che lo attenderà volentieri.
+
+Avendo già saputo, come la fama l'aveva portata per tutto, la cagione per cui costui era menato a morire, Fineo va prestamente con i compagni e con la loro famiglia da messer Currado e gli dichiara che colui che egli manda a morire come servo è libero uomo e suo figliuolo, ed è pronto a prendere per moglie colei che si dice abbia privata della verginità; e lo prega perciò di indugiare l'esecuzione tanto da poter sapere se ella lo voglia per marito, perché, se lo volesse, non si trovi ad aver fatto contro la legge.
+
+Udendo che costui è figliuolo di Fineo, messer Currado si meraviglia; e vergognatosi alquanto del peccato della fortuna, confessato che è vero quanto Fineo dice, lo fa prestamente tornare a casa e manda per messere Amerigo, cui riferisce queste cose. Messere Amerigo, che già credeva morti la figliuola e il nipote, è il più dolente uomo del mondo di ciò che aveva fatto, conoscendo che, se ella non fosse morta, ogni cosa si sarebbe potuta molto bene emendare; e manda correndo là dove era la figliuola perché, se non fosse stato eseguito, non si eseguisse il suo comandamento.
+
+Chi vi andò trovò il famigliare mandato da messere Amerigo che, avendole posto innanzi il coltello e il veleno, le diceva villania perché non sceglieva tanto presto e voleva costringerla a prendere l'uno; ma udito il comandamento del proprio signore, la lascia stare e torna da lui a riferirgli come stesse l'opera.
+
+Contento di ciò, messere Amerigo va da Fineo e, quasi piangendo, si scusa come meglio sa di quanto era intervenuto e ne domanda perdono, affermando di essere molto contento di dargli la propria figliuola se Teodoro la voglia per moglie. Fineo riceve volentieri le scuse e risponde: «Io intendo che mio figliuolo la vostra figliuola prenda; e dove egli non volesse, vada innanzi la sentenza letta di lui».
+
+Essendo dunque Fineo e messere Amerigo in concordia, vanno da Teodoro, ancora tutto pauroso della morte e lieto di aver ritrovato il padre, e lo domandano del proprio volere intorno alla cosa. Udendo che la Violante sarebbe sua moglie ove egli volesse, tanta è la sua letizia che gli pare di saltare d'inferno in paradiso; e risponde che gli sarebbe grandissima grazia, ove piacesse a ciascuno di loro. Si manda dunque a sentire il volere della giovane; la quale, udendo ciò che era avvenuto e stava per avvenire di Teodoro — mentre aspettava la morte più dolorosa di ogni altra femmina —, dopo molto e prestando alquanta fede alle parole si rallegra un poco, e risponde che, se seguisse in ciò il proprio desiderio, nessuna cosa più lieta le potrebbe avvenire che essere moglie di Teodoro, ma che farà comunque quello che il padre le comanderà.
+
+Fatta così sposare in concordia la giovane, si fece festa grandissima con sommo piacere di tutti i cittadini. Confortandosi e facendo nutrire il proprio piccolo figliuolo, la giovane tornò dopo non molto tempo più bella che mai; e levata dal parto, e venuta davanti a Fineo — la cui tornata da Roma si attese —, gli fece quella reverenza che si fa a un padre. Ed egli, forte contento di così bella nuora, fatte fare le loro nozze con grandissima festa e allegrezza, la ricevette in luogo di figliuola e la tenne poi sempre per tale; e dopo alquanti giorni menò con sé il figliuolo, lei e il piccolo nipote in galea a Laiazzo, dove i due amanti dimorarono con riposo e con pace quanto durò la loro vita.
+
+## Personaggi e significato
+
+La novella lavora per intero su uno scarto fra la condizione apparente e quella reale di Teodoro, e lo segnala fin dalla presentazione: comprato come turco fra fanciulli che parevano pastori, egli pare invece «gentilesco e di migliore aspetto», e crescendo «traendo piú alla natura di lui che all'accidente» diviene costumato e di bella maniera. Il battesimo che gli impone il nome di Pietro è un errore di fatto — non era turco — e cancella insieme il nome, la lingua e la famiglia che il riconoscimento finale gli restituirà.
+
+La condanna nasce dalla denuncia di messere Amerigo e da una confessione estratta con il martorio; ma è Fineo a rovesciarne il quadro, dichiarando a messer Currado che «colui il quale voi mandate a morir come servo è libero uomo e mio figliuolo». La vergogna del capitano quando lo apprende è detta «del peccato della fortuna», non del proprio giudizio. Il segno che sblocca tutto è puramente fisico e casuale — la macchia vermiglia sul petto, visibile solo perché il condannato è frustato ignudo dalla cintura in su —, ma Fineo non se ne accontenta: verifica prima l'età, poi il nome, poi la lingua, chiamandolo «Teodoro» e interrogandolo in ermino.
+
+Il testo distribuisce le colpe senza attenuare quella del padre di lei. Messere Amerigo non si limita a denunciare Pietro: dopo averlo fatto condannare, e con l'ira ancora non uscita, ordina alla figliuola di scegliere fra veleno e ferro e comanda che il nipote sia ucciso e gettato ai cani. Il famigliare incaricato è qualificato «piú a male che a ben disposto», e la scena in cui insulta la giovane perché non sceglie abbastanza in fretta è interrotta soltanto dal contrordine arrivato per caso in tempo. Il pentimento del padre, quando arriva, è motivato in termini di opportunità — che ogni cosa si sarebbe potuta emendare — più che di rimorso.
+
+Il patto fra i due amanti regge fin dove può reggere. La giovane aveva promesso che il peccato di lui non si sarebbe saputo se egli non lo avesse detto, e mantiene la promessa componendo una favola per la madre; la rompe solo davanti alla spada ignuda del padre, dopo aver partorito. Anche la sua risposta finale è coerente con questa linea: dichiara che nulla le sarebbe più lieto che essere moglie di Teodoro, ma aggiunge che farà comunque quel che il padre le comanderà.

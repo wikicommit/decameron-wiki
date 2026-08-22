@@ -1,0 +1,29 @@
+---
+title: "Person"
+lang: en
+type: "schema:Person"
+---
+
+[[Person/dante-alighieri]] — Dante Alighieri
+[[Person/dioneo]] — Dioneo
+[[Person/elissa]] — Elissa
+[[Person/emilia]] — Emilia
+[[Person/fiammetta]] — Fiammetta
+[[Person/filomena]] — Filomena
+[[Person/filostrato]] — Filostrato
+[[Person/geoffrey-chaucer]] — Geoffrey Chaucer
+[[Person/giotto]] — Giotto
+[[Person/giovanni-boccaccio]] — Giovanni Boccaccio
+[[Person/guido-cavalcanti]] — Guido Cavalcanti
+[[Person/lauretta]] — Lauretta
+[[Person/leonardo-salviati]] — Leonardo Salviati
+[[Person/licisca]] — Licisca
+[[Person/neifile]] — Neifile
+[[Person/pampinea]] — Pampinea
+[[Person/panfilo]] — Panfilo
+[[Person/petrarch]] — Francesco Petrarch
+[[Person/pietro-bembo]] — Pietro Bembo
+[[Person/saladin]] — Saladin
+[[Person/tindaro]] — Tindaro
+[[Person/vincenzo-borghini]] — Vincenzo Borghini
+[[Person/vittore-branca]] — Vittore Branca
